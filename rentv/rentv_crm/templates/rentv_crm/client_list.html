@@ -1,0 +1,38 @@
+{% extends 'rentv_crm/base.html' %}
+{% block content %}
+<table data-toggle="table" data-cache="false" data-row-style="table-hover" class="table table-hover table-condensed table-striped" >
+    <tr>
+        <th>Клиент</th>
+        <th>Менеджер</th>
+        <th>Статус</th>
+        <th>Телефон</th>
+        <th>Контакт</th>
+        <th>Описание</th>
+    </tr>
+    {% for client in object_list %}
+        <tr>
+            <td>
+                <a href="{{ client.get_absolute_path }}">{{ client.title }}</a>
+            </td>
+            <td>
+                {{ client.manager.name }}
+            </td>
+            <td>
+                {{ client.status.title }}
+            </td>
+            <td>
+                {{ client.contact_phone }}
+            </td>
+            <td>
+                {{ client.contact_person }}
+            </td>
+            <td>
+                {{ client.description }}
+            </td>
+         </tr>   
+            
+    {% empty %}
+    <p>Нет клиентов</p>
+    {% endfor %}
+
+{% endblock %}

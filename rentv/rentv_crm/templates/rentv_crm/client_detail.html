@@ -1,0 +1,8 @@
+{% extends 'rentv_crm/base.html' %}
+{% block content %}
+    <p>{{ client.title }}</p>
+    <h2>{{ client.description }}</h2>
+    <p>{{ client.manager.name }}</p>
+    <p>{{ client.status.title }}</p>
+    
+{% endblock %}
