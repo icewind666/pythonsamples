@@ -7,16 +7,16 @@ from telegrambot import TelegramBot
 
 # ======== CONSTANTS =============================
 STATE_FILE = 'state.json'
-ROCKETCHAT_URL = 'https://chat.rcbi.company/'
+ROCKETCHAT_URL = 'https://../'
 ROCKETCHAT_USERNAME = 'trello_bot'
 ROCKETCHAT_PASSWORD = 'trellobot2017'
 # Current sprint's board id
-SPRINT_BOARD_ID = '57e8fca727f213bf96619288'
+SPRINT_BOARD_ID = '.'
 # predefined id keys of SCRUM lists
-TODO_LIST_ID = '57e8fcbefab90979abcf459b'
-INPROGRESS_LIST_ID = '57e8fcc3f27f310cdbe6fd83'
-DONE_LIST_ID = '57e8fcc77dc35584ace008e5'
-TESTED_ON_DEV_LIST_ID = '57e8fcce5f5786f5a65a3f95'
+TODO_LIST_ID = '.'
+INPROGRESS_LIST_ID = '.'
+DONE_LIST_ID = '.'
+TESTED_ON_DEV_LIST_ID = '.'
 
 telegrambot = TelegramBot()
 
@@ -90,8 +90,8 @@ MAIN PART GOES BELOW
 """
 # Starting trello api client wrapper
 client = TrelloClient(
-    api_key='7f3198f11e4fb333b00f687914cde2ad',
-    token='ebcb4f16f128639a01bbafaddc785fb7816f0aac70f82d402653426b5572f5e4'
+    api_key='.',
+    token='.'
 )
 
 board = None
