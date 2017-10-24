@@ -10,10 +10,10 @@ class TelegramBot(object):
         self.sendingBot.sendMessage(chat_id=self.chat_id, text=text)
 
     def __init__(self):
-        self.bot = telegram.ext.Updater(token='254583592:AAG0eINt7l8DKWFNHdF3_4Yr5iaWURVvn7s')
-        self.sendingBot = telegram.Bot(token='254583592:AAG0eINt7l8DKWFNHdF3_4Yr5iaWURVvn7s')
+        self.bot = telegram.ext.Updater(token='.')
+        self.sendingBot = telegram.Bot(token='.')
         self.dispatcher = self.bot.dispatcher
-        self.chat_id = '@rcbinotify'
+        self.chat_id = '.'
 
 
         #status_handler = CommandHandler('status', status)
